@@ -10,7 +10,7 @@ export function main() {
 
     let opcao: number, id: number, tipo: number, preco: number;
     let nome: string, generico: string, fragrancia: string;
-    let TipoProduto = ['Medicamento, Cosmetico'];
+    let TipoProduto = ['Medicamento', 'Cosmetico'];
 
     const produtoController: ProdutoController = new ProdutoController();
 
@@ -62,7 +62,7 @@ export function main() {
                     "\n\nCriar Produto\n\n", colors.reset);
 
                 nome = readlinesync.question("Digite o Nome do Produto: ");
-                tipoipo = readlinesync.keyInSelect(TipoProduto, "", { cancel: false }) + 1;
+                tipo = readlinesync.keyInSelect(TipoProduto, "", { cancel: false }) + 1;
                 preco = readlinesync.questionFloat("Digite o preco: ");
 
                 switch (tipo) {

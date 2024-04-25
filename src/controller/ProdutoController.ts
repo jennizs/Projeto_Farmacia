@@ -37,7 +37,7 @@ export class ProdutoController implements ProdutoRepository {
 
     cadastrar(Produto: Produto): void {
         this.listaprodutos.push(Produto);
-        console.log("O produto foi adicionada!");
+        console.log("O produto foi adicionado!");
       
     }
 
